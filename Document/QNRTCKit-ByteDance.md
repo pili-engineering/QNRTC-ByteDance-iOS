@@ -54,7 +54,7 @@ QNRTCKit-ByteDance 是七牛推出的一款适用于 iOS 平台的具有高级�
 
 ```ruby
 target 'TargetName' do
-pod 'QNRTCKit-ByteDance', :podspec => 'https://raw.githubusercontent.com/pili-engineering/QNRTCKit-ByteDance/master/QNRTCKit-ByteDance.podspec'
+pod 'QNRTCKit-ByteDance', :podspec => 'https://raw.githubusercontent.com/pili-engineering/QNRTC-ByteDance-iOS/master/QNRTCKit-ByteDance.podspec'
 end
 ```
 
