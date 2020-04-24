@@ -1,8 +1,6 @@
 # QNRTCKit-ByteDance
 
-# QNRTCKit-ByteDance
-
-QNRTCKit-ByteDance 是七牛推出的一款适用于 iOS 平台的具有高级特效功能的连麦 SDK，提供了包括基本的音视频通话、内置水印、踢人、静音、帧率配置、视频编码配置、视频尺寸配置、自动重连、纯音频连麦互动、大小窗口切换、编码镜像、外部数据导入、录屏等等多种功能，支持高度定制以及二次开发。QNRTCKit 功能请参考[QNRTCKit](https://github.com/pili-engineering/QNRTC-iOS/blob/master/README.md)
+QNRTCKit-ByteDance 是七牛推出的一款适用于 iOS 平台的具有高级特效功能的连麦 SDK，提供了包括基本的音视频通话、内置水印、踢人、静音、帧率配置、视频编码配置、视频尺寸配置、自动重连、纯音频连麦互动、大小窗口切换、编码镜像、外部数据导入、录屏等等多种功能，支持高度定制以及二次开发。QNRTCKit 功能请参考 [QNRTCKit](https://github.com/pili-engineering/QNRTC-iOS/blob/master/README.md)
 
 Demo下载:
 
@@ -11,7 +9,7 @@ Demo下载:
 ## 1 功能介绍
 
 此款 SDK 包含七牛连麦 SDK 中所有功能，并额外提供高级美颜、高级美型、高级滤镜和动态贴纸。具有效果自然、强度可调、配置灵活、适应各种光照场景、GPU 上实时渲染、毫秒级响应等优势，基于领先的人脸关键点检测技术，支持多人脸检测，且贴合各种脸型。
-**有关于七牛连麦 SDK 的功能请参考[七牛连麦介绍文档](QNRTCKit](https://github.com/pili-engineering/QNRTC-iOS/blob/master/README.md)**
+**有关于七牛连麦 SDK 的功能请参考 [七牛连麦介绍文档](https://github.com/pili-engineering/QNRTC-iOS/blob/master/README.md)**
 
 <table>
    <tr>
