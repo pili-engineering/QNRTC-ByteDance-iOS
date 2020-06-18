@@ -28,6 +28,7 @@
 
 - (void)dealloc {
     NSLog(@"[dealloc]==> %@", self.description);
+    [PLSEffectManager releaseManager];
 }
 
 - (void)viewDidLoad {
@@ -183,7 +184,7 @@
     NSString *rootPath = [[NSBundle mainBundle] resourcePath];
     PLSEffectConfiguration *effectConfiguration = [PLSEffectConfiguration new];
     effectConfiguration.modelFileDirPath = [NSString pathWithComponents:@[rootPath, @"ModelResource.bundle"]];
-    effectConfiguration.licenseFilePath = [NSString pathWithComponents:@[rootPath, @"LicenseBag.bundle", @"qiniu_20200214_20210213_com.qbox.QNRTCKitDemo.bytedance_qiniu_v3.4.2.licbag"]];
+    effectConfiguration.licenseFilePath = [NSString pathWithComponents:@[rootPath, @"LicenseBag.bundle", @"qiniu_20200214_20210213_com.qbox.QNRTCKitDemo.bytedance_qiniu_v3.9.0.licbag"]];
     _effectDataManager = [[PLSEffectDataManager alloc] initWithRootPath:rootPath];
     
     self.effectManager = [PLSEffectManager sharedWith:[[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2] configuration:effectConfiguration];

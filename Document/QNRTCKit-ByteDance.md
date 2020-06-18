@@ -54,7 +54,7 @@ QNRTCKit-ByteDance 是七牛推出的一款适用于 iOS 平台的具有高级�
 
 ```ruby
 target 'TargetName' do
-pod 'QNRTCKit-ByteDance', :podspec => 'https://raw.githubusercontent.com/pili-engineering/QNRTC-ByteDance-iOS/master/QNRTCKit-ByteDance.podspec'
+pod 'QNRTCKit-ByteDance', :podspec => 'https://raw.githubusercontent.com/pili-engineering/QNRTCKit-ByteDance/master/QNRTCKit-ByteDance.podspec'
 end
 ```
 
@@ -63,6 +63,8 @@ end
 ```bash
 $ pod install
 ```
+####注意：除了上述包通过 pod 载入之外，项目中还需要添加 libeffect-sdk.a ,  可在 Example/QNRTCKitDemo/ 下获取   
+
 
 ## 4.4 添加权限说明
 我们需要在 Info.plist 文件中添加相应权限的说明，否则程序在 iOS 10 系统上会出现崩溃。需要添加如下权限：
@@ -76,30 +78,48 @@ $ pod install
 解压资源文件，得到如下目录结构
 
 ```
-├── ComposeMakeup.bundle 		//美颜美妆素材
-│   └── ComposeMakeup
-│       ├── beauty_IOS
-│       ├── composer
-│       ├── list_ios.json 		 //列表文件，PLSEffectDataManager 将根据此文件生成美颜美妆列表，可自行编辑
-│       ├── list_sample.json  	//列表文件示例
-│       └── reshape
-├── FilterResource.bundle
-│   └── Filter
-│       ├──***
-│       └── list.json  	//列表文件，PLSEffectDataManager 将根据此文件生成滤镜列表，可自行编辑
-├── LicenseBag.bundle  	//授权文件
+├── ComposeMakeup.bundle            //美颜美妆素材
+│   ├── ComposeMakeup
+│   │   ├── beauty_4Items 
+│   │   ├── beauty_Android_live  
+│   │   ├── beauty_IOS_live 
+│   │   ├── blush  
+│   │   ├── body 
+│   │   ├── composer
+│   │   ├── eyebrow
+│   │   ├── eyeshadow
+│   │   ├── facial
+│   │   ├── hair
+│   │   ├── lip
+│   │   ├── pupil
+│   │   └── reshape_live
+│   ├── config.json                  //列表文件，PLSEffectDataManager 将根据此文件生成美颜美妆列表，可使用脚本生成
+│   └── icons
+├── FilterResource.bundle             
+│   ├── Filter
+│   │   ├── ***
+│   ├── config.json                  //列表文件，PLSEffectDataManager 将根据此文件生成滤镜列表，可使用脚本生成
+│   └── icons  
+├── LicenseBag.bundle                //授权文件    
 │   └── ***.licbag
-├── ModelResource.bundle   	//算法模型文件
+├── ModelResource.bundle             //算法模型文件
+│   ├── animoji
+│   ├── ar_scan
+│   ├── catmodel
+│   ├── hairparser
+│   ├── handmodel
+│   ├── mattingmodel
+│   ├── skeleton_model
 │   ├── ttfaceattrmodel
-│   │   ├── tt_beauty_attr6_v1.0.model
-│   │   └── tt_face_attribute_v4.1.model
-│   └── ttfacemodel
-│       ├── tt_face_extra_v9.0.model
-│       └── tt_face_v6.0.model
-└── StickerResource.bundle 		//贴纸素材
-    └── stickers
+│   ├── ttfacemodel
+│   ├── ttfaceverify
+│   └── ttpetface
+└── StickerResource.bundle          //贴纸素材
+    ├── config.json                 //列表文件，PLSEffectDataManager 将根据此文件生成贴纸列表，可使用脚本生成
+    ├── icons
+    └── stickers
         ├── ***
-        └── list.json  		 //列表文件，PLSEffectDataManager 将根据此文件生成贴纸列表，可自行编辑
+        
 ```
 
 ## 4.6 使用方法

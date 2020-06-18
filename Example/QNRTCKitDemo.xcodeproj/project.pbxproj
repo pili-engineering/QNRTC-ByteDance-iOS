@@ -740,7 +740,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/QNRTCKitDemo",
 				);
-				MARKETING_VERSION = 2.3.1;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
@@ -780,7 +780,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/QNRTCKitDemo",
 				);
-				MARKETING_VERSION = 2.3.1;
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
